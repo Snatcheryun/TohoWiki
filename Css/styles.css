@@ -18,10 +18,22 @@
   justify-content: space-between;
   align-items: center;
   grid-template-columns: repeat(2, max-content);
-  background-image: url(../img/banner.png);
-  background-repeat: no-repeat;
 }
 
+@media (min-widt: 1000px) {
+  .nav {
+    --state-close: scale(0);
+    --state-hambuerguer: scale(1);
+    --state-menu: translate(-100%);
+    padding: 45px 0;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(2, max-content);
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+  }
+}
 .nav:target {
   --state-menu: translate(0);
   --state-close: scale(1);
@@ -1052,7 +1064,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 15px;
   margin: 20px 0 20px 0;
 }
