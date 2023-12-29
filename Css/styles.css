@@ -20,20 +20,6 @@
   grid-template-columns: repeat(2, max-content);
 }
 
-@media (min-widt: 1000px) {
-  .nav {
-    --state-close: scale(0);
-    --state-hambuerguer: scale(1);
-    --state-menu: translate(-100%);
-    padding: 45px 0;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-columns: repeat(2, max-content);
-    background-image: url(../img/banner.png);
-    background-repeat: no-repeat;
-  }
-}
 .nav:target {
   --state-menu: translate(0);
   --state-close: scale(1);
@@ -1145,8 +1131,8 @@ a {
 }
 
 .p__start {
-  width: 85%;
-  margin-left: 30px;
+  width: 70%;
+  margin: 0 auto;
   line-height: 24px;
   text-align: center;
 }
